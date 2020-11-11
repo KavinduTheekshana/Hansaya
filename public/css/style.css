@@ -1991,7 +1991,8 @@ section.teachers-section {
       margin-bottom: 30px; }
     section.teachers-section .profile-details .line-details {
       padding: 30px 0;
-      border-top: 1px solid #ebebeb; }
+      /* border-top: 1px solid #ebebeb;  */
+    }
     section.teachers-section .profile-details .detail-item {
       display: flex; }
       section.teachers-section .profile-details .detail-item i {
