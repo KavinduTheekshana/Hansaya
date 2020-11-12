@@ -18,6 +18,19 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 
+
+
+
+
+
+
+	
+
+
+
+
+
+
 </head>
 <body>
 
@@ -93,7 +106,7 @@
 							<li><a href="about">අප ගැන</a></li>
 							<li><a href="contact">සම්බන්ද වන්න</a></li>
 						</ul>
-						<a href="#" class="register-modal-opener login-button"><i class="material-icons">perm_identity</i> ඇතුලු වන්න</a>
+						<a href="login" class="register-modal-opener login-button"><i class="material-icons">perm_identity</i> ඇතුලු වන්න</a>
 					</div>
 				</div>
 			</nav>

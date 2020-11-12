@@ -23,9 +23,9 @@
 					<div class="col-lg-3 col-md-4">
 						<div class="sidebar">
 							<div class="filter-widget widget">
-								<h2>Filter Controls</h2>
+								<h2>අධ්යාපන ආයතන</h2>
 								<ul class="filter">
-									<li><a class="active" href="#" data-filter="*">All</a></li>
+									<li><a class="active" href="#" data-filter="*">සියල්ල</a></li>
 									<li><a href="#" data-filter=".campus">Campus Images</a></li>
 									<li><a href="#" data-filter=".university">Nature of University</a></li>
 									<li><a href="#" data-filter=".students">Students Learning</a></li>
