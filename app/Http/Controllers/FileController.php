@@ -47,9 +47,15 @@ class FileController extends Controller
             $files->file_path = "$file_parth";
         }
 
-
-
         $files->save();
         return redirect()->back()->with('status', 'File Upload Sucessfully');
     }
+
+
+    public function manage_file()
+    {
+        return view('manage_file');
+    }
+
+
 }

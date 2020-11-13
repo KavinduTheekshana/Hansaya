@@ -49,6 +49,5 @@ Route::get('user_delete/{id}', [App\Http\Controllers\UserController::class, 'use
 
 // Create file upload form
 Route::get('upload_file', [App\Http\Controllers\FileController::class, 'upload_file'])->name('upload_file')->middleware('is_admin');
-
-// Store file
-Route::post('/upload-file', 'App\Http\Controllers\FileController@fileUpload')->name('fileUpload');
+Route::post('fileUpload', 'App\Http\Controllers\FileController@fileUpload')->name('fileUpload')->middleware('is_admin');
+Route::get('manage_file', [App\Http\Controllers\FileController::class, 'manage_file'])->name('manage_file')->middleware('is_admin');

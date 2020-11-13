@@ -239,6 +239,16 @@
                         </li>
 
 
+                        <li class="active">
+                            <a class="dropdown-toggle" href="manage_file">
+                                <span class="icon-holder">
+                                <i class="anticon anticon-hdd"></i>
+                                </span>
+                                <span class="title">Manage Files</span>
+                            </a>
+                        </li>
+
+
                         <li class="nav-item dropdown">
                             <a class="dropdown-toggle" href="javascript:void(0);">
                                 <span class="icon-holder">
@@ -737,8 +747,10 @@
     <script src="assets/vendors/datatables/jquery.dataTables.min.js"></script>
     <script src="assets/vendors/datatables/dataTables.bootstrap.min.js"></script>
     <script src="assets/js/pages/datatables.js"></script>
-
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- page js -->
+    <script src="assets/js/pages/file-manager.js"></script>
 
 
 </body>
