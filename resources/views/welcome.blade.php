@@ -104,6 +104,126 @@
 </section> -->
 <!-- End feature section -->
 
+
+	<!-- question-section 
+			================================================== -->
+			<section class="question-section">
+			<div class="container">
+				<div class="question-box">
+					<h3 style="margin-bottom: 0px; font-size: 30px;"><span>නොපහන් ශිල්ප  සුපහන් කරන</span></h3>
+					<!-- <h1 style="text-align: center;"><span>නොපහන් ශිල්ප  සුපහන් කරන</span></h1> -->
+					<h1 style="text-align: center;"><span>...යුගයේ සිංහල පන්තිය....</span></h1>
+					
+					<br>
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="block-content">
+								<div class="icon">
+									<i class="fa fa-circle"></i>
+								</div>
+								<div class="content">
+									<h2>සෑම වසරකම සාමාන්‍ය පෙළ විභාගයෙ විභාගයෙන් වැඩිම 'A'  සාමර්ථ වාර්තා කරන එකම සිංහල පන්තිය වීම (සාක්ෂි සහිතයි)</h2>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6">
+							<div class="block-content">
+								<div class="icon">
+									<i class="fa fa-circle"></i>
+								</div>
+								<div class="content">
+									<h2>වාර විභාග ඉලක්ක කර ගනිමින්, මාසික ඇගයීම් පවත්වමින්, පාසල් වාර විභාගය තුනේදී ම ඉහළ ලකුණු වාර්තා කරන්නේ අපේ පන්තිය ට  පැමිණෙන දරුවන් ය.</h2>
+								</div>
+							</div>
+						</div>
+				
+					</div>
+
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="block-content">
+								<div class="icon">
+									<i class="fa fa-circle"></i>
+								</div>
+								<div class="content">
+									<h2>පසුගිය වසර 08 ක කාලය තුළ පන්තියට සහභාගී වූ සිසුන් කිසිවෙකු  සාමර්ථ ලබා නොගත් පන්තියේ බවට පත්වීම.</h2>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6">
+							<div class="block-content">
+								<div class="icon">
+									<i class="fa fa-circle"></i>
+								</div>
+								<div class="content">
+									<h2>සිරිලක කුඩාම කෙටි සටහන් පොත් ලබාදීම.</h2>
+								</div>
+							</div>
+						</div>
+				
+					</div>
+
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="block-content">
+								<div class="icon">
+									<i class="fa fa-circle"></i>
+								</div>
+								<div class="content">
+									<h2>සාමාන්‍ය ප්‍රතිඵලවලින් ශ්‍රී ලංකාවේ  පළමු ස්ථානය දිනාගත් පාසලේ සිංහල  ගුරුවරයා වීම.</h2>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6">
+							<div class="block-content">
+								<div class="icon">
+									<i class="fa fa-circle"></i>
+								</div>
+								<div class="content">
+									<h2>සෑම වසරකම අගෝස්තු මාසයේ සිට පොත් පොත්පත් ගෙන ඒම සපුරා තහනම් කරමින් විභාගයට හුරු කර වීම.</h2>
+								</div>
+							</div>
+						</div>
+				
+					</div>
+
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="block-content">
+								<div class="icon">
+									<i class="fa fa-circle"></i>
+								</div>
+								<div class="content">
+									<h2>විභාග රහස්, කෙටි ක්‍රම, මනෝවිද්‍යාත්මක දේශන රටාව සමගින් දරුවන්ට ඉගැන්වීම ලබා දෙන පන්තිය බවට පත් වීම.</h2>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6">
+							<div class="block-content">
+								<div class="icon">
+									<i class="fa fa-circle"></i>
+								</div>
+								<div class="content">
+									<h2>සෑම වසරකම රචනාව හා විචාර ප්‍රශ්න  වැඩි පුරම අනුමාන ප්‍රශ්න ලෙස  නොව ඉලක්ක ප්‍රශ්න ලෙස ලබා දෙන පන්තිය බවට පත් වීම.</h2>
+								</div>
+							</div>
+						</div>
+				
+					</div>
+
+
+				</div>
+			</div>
+		</section>
+		<!-- End question section -->
+
+
+		
+
 <!-- countdown-section 
 			================================================== -->
 <section class="countdown-section">
@@ -128,66 +248,49 @@
 	<div class="container">
 		<div class="title-section">
 			<div class="left-part">
-				<span>Categories</span>
-				<h1>Trending Collection</h1>
+				<span>සිංහල භාෂාව පිළිබඳ</span>
+				<h1>මෙසේ තබමු සටහනක් .....</h1>
 			</div>
 			<div class="right-part">
-				<a class="button-one" href="#">View All Courses</a>
+				<!-- <a class="button-one" href="#">View All Courses</a> -->
 			</div>
 		</div>
 		<div class="collection-box">
 			<div class="row">
 				<div class="col-lg-6 col-md-12">
+				
+	
+				<div class="events-post">
+						<div class="event-inner-content">
+							<div class="top-part">
+								<div class="date-holder">
+								
+								</div>
+								<div class="content" style="padding:30px;">
+
+									<h2 class="title"><a href="#">මව් කුසින් එළිය දකින පුංචි බිලින්දා භාෂාවකට උරුමකම්  කියයි. හෙළ භාෂාව  නිවැරදිව ඉගෙන ගන්නා අයකු බවට පත්වී ශබ්දකෝෂයට  හිමිකම් කියන අයකු බවට පත්වෙයි. හෙළ භාෂාව නිවැරදි ලෙස ඉගෙන උච්චාරණය හා ලේඛනය ලෙස භාවිතයට ගනු ලබයි. එදිනෙදා නොයෙක් අවශ්‍යතාවයන් වෙනුවෙන් භාෂාව භාවිතයට ගෙන තම කාර්යයන් වඩාත් සඵලදායි  ලෙස ඉටු කර ගැනීමට මනා පිටුවහලක් බවට පත්වනු ඇත. පත් වනු ඇත ඒ නිසා සිංහල භාෂාව නිවැරදිව ඉගෙන ගැනීම තුළින් වඩාත් නිවැරදි ලේඛන භාෂාවක් ඔබ සන්තක වීම, නිරවුල් ලේඛන කලාවක් සමාජගත වීමට ප්‍රබල ම බලපාන සාධකයක් බවට පත් වනු ලබයි.
+									<br>
+									<br>
+									...භාෂාව උගනිමු දැනුමෙන් සපිරි මු...</a></h2>
+								</div>
+							</div>
+						</div>
+					</div>
+
+		
+
+
+				</div>
+
+				<div class="col-lg-6 col-md-12">
 					<div class="collection-post">
 						<div class="inner-collection">
-							<img src="upload/collection/web-development.jpg" alt="">
-							<a href="#" class="hover-post">
-								<span class="title">Web Development</span>
-								<span class="numb-courses">3 Courses</span>
-							</a>
+							<img src="upload/collection/language.jpg" alt="">
+						
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="collection-post">
-						<div class="inner-collection">
-							<img src="upload/collection/web-design.jpg" alt="">
-							<a href="#" class="hover-post">
-								<span class="title">Web Design</span>
-								<span class="numb-courses">2 Courses</span>
-							</a>
-						</div>
-					</div>
-					<div class="collection-post">
-						<div class="inner-collection">
-							<img src="upload/collection/technology.jpg" alt="">
-							<a href="#" class="hover-post">
-								<span class="title">Technology</span>
-								<span class="numb-courses">3 Courses</span>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="collection-post">
-						<div class="inner-collection">
-							<img src="upload/collection/photography.jpg" alt="">
-							<a href="#" class="hover-post">
-								<span class="title">Photography</span>
-								<span class="numb-courses">3 Courses</span>
-							</a>
-						</div>
-					</div>
-					<div class="collection-post">
-						<div class="inner-collection">
-							<img src="upload/collection/design.jpg" alt="">
-							<a href="#" class="hover-post">
-								<span class="title">Design</span>
-								<span class="numb-courses">3 Courses</span>
-							</a>
-						</div>
-					</div>
-				</div>
+				
 			</div>
 
 		</div>

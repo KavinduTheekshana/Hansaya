@@ -6,7 +6,8 @@
 			================================================== -->
 		<section class="page-banner-section">
 			<div class="container">
-				<h1>අපගේ පඨමාලා</h1>
+				<h1>එන්න....
+ඔබ ඔබ සිංහල දැනුමෙනෙන් සන්නද්ධ කරන ශිල්පගාර වෙත...</h1>
 				<ul class="page-depth">
 					<li><a href="index.html">සිංහල හංසයා</a></li>
 					<li><a href="teachers.html">අපගේ පඨමාලා</a></li>
@@ -26,10 +27,11 @@
 								<h2>අධ්යාපන ආයතන</h2>
 								<ul class="filter">
 									<li><a class="active" href="#" data-filter="*">සියල්ල</a></li>
-									<li><a href="#" data-filter=".campus">Campus Images</a></li>
-									<li><a href="#" data-filter=".university">Nature of University</a></li>
-									<li><a href="#" data-filter=".students">Students Learning</a></li>
-									<li><a href="#" data-filter=".travelling">Travelling with Teachers</a></li>
+									<li><a href="#" data-filter=".campus">තක්සලා - වලස්මුල්ල </a></li>
+									<li><a href="#" data-filter=".university">නිව් සුදර්ශි - මිද්දෙණිය</a></li>
+									<li><a href="#" data-filter=".students">හයස්ටඩි - වීරකැටිය</a></li>
+									<li><a href="#" data-filter=".travelling">ප්‍රගති - බෙලිඅත්ත</a></li>
+									<li><a href="#" data-filter=".travelling">ධරණි - මැදමුලන </a></li>
 								</ul>
 							</div>
 						</div>
@@ -74,5 +76,21 @@
 			</div>
 		</section>
 		<!-- End portfolio section -->
+
+		<section class="countdown-section" style="background-color: #FFFFFF;">
+	<div class="container">
+
+		<h1 style="font-size: 50px;">Online Class</h1>
+		<br>
+		<p style="font-size: 35px; line-height: 40px;">ආයතනවලට සහභාගී විය නොහැකි දරුවන් වෙනුවෙන්  online class  ආරම්භ කොට ඇත.
+වැඩි විස්තර සඳහා 0776902811 දුරකථන අංකයට පණිවිඩයක් දෙන්න.</p>
+
+
+		<a class="button-two" href="#">සම්බන්ද වන්න</a>
+
+	</div>
+</section>
+
+
 
         @endsection
