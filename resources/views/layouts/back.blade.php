@@ -13,8 +13,14 @@
     <link href="assets/vendors/select2/select2.css" rel="stylesheet">
     <link href="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet">
 
+    <!-- page css -->
+    <link href="assets/vendors/datatables/dataTables.bootstrap.min.css" rel="stylesheet">
+
+
     <!-- Core css -->
     <link href="assets/css/app.min.css" rel="stylesheet">
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
 </head>
 
@@ -131,8 +137,8 @@
                                             <img src="{{ auth()->user()->profile }}" alt="">
                                         </div>
                                         <div class="m-l-10">
-                                            <p class="m-b-0 text-dark font-weight-semibold"> 
-                                                @if (strlen(strip_tags(  auth()->user()->name  )) > 13)
+                                            <p class="m-b-0 text-dark font-weight-semibold">
+                                                @if (strlen(strip_tags( auth()->user()->name )) > 13)
                                                 {!! substr(strip_tags( auth()->user()->name ), 0, 13) !!}...
                                                 @else
                                                 {{ auth()->user()->name }}
@@ -211,10 +217,19 @@
                                     <i class="anticon anticon-dashboard"></i>
                                 </span>
                                 <span class="title">Dashboard</span>
-
                             </a>
-
                         </li>
+
+                        <li class="active">
+                            <a class="dropdown-toggle" href="users">
+                                <span class="icon-holder">
+                                    <i class="anticon anticon-user"></i>
+                                </span>
+                                <span class="title">Users</span>
+                            </a>
+                        </li>
+
+
                         <li class="nav-item dropdown">
                             <a class="dropdown-toggle" href="javascript:void(0);">
                                 <span class="icon-holder">
@@ -704,6 +719,18 @@
 
     <!-- Core JS -->
     <script src="assets/js/app.min.js"></script>
+
+
+    <!-- page js -->
+    <script src="assets/js/pages/profile.js"></script>
+
+    <!-- page js -->
+    <script src="assets/vendors/datatables/jquery.dataTables.min.js"></script>
+    <script src="assets/vendors/datatables/dataTables.bootstrap.min.js"></script>
+    <script src="assets/js/pages/datatables.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 
 </body>
 

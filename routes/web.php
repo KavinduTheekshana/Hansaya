@@ -39,3 +39,8 @@ Route::get('edit_profile', [App\Http\Controllers\ProfileController::class, 'edit
 Route::POST('changePassword', [App\Http\Controllers\ProfileController::class, 'changePassword'])->name('changePassword')->middleware('is_admin');
 Route::POST('updateProfile', [App\Http\Controllers\ProfileController::class, 'updateProfile'])->name('updateProfile')->middleware('is_admin');
 Route::POST('updateprofilepicture', [App\Http\Controllers\ProfileController::class, 'updateprofilepicture'])->name('updateprofilepicture')->middleware('is_admin');
+
+Route::get('users', [App\Http\Controllers\UserController::class, 'users'])->name('users')->middleware('is_admin');
+Route::get('user_diactivate/{id}', [App\Http\Controllers\UserController::class, 'user_diactivate'])->middleware('is_admin');
+Route::get('user_activate/{id}', [App\Http\Controllers\UserController::class, 'user_activate'])->middleware('is_admin');
+Route::get('user_delete/{id}', [App\Http\Controllers\UserController::class, 'user_delete'])->middleware('is_admin');
