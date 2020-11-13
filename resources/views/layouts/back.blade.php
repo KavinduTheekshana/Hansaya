@@ -229,6 +229,15 @@
                             </a>
                         </li>
 
+                        <li class="active">
+                            <a class="dropdown-toggle" href="upload_file">
+                                <span class="icon-holder">
+                                <i class="anticon anticon-form"></i>
+                                </span>
+                                <span class="title">File Upload</span>
+                            </a>
+                        </li>
+
 
                         <li class="nav-item dropdown">
                             <a class="dropdown-toggle" href="javascript:void(0);">
