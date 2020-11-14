@@ -51,3 +51,9 @@ Route::get('user_delete/{id}', [App\Http\Controllers\UserController::class, 'use
 Route::get('upload_file', [App\Http\Controllers\FileController::class, 'upload_file'])->name('upload_file')->middleware('is_admin');
 Route::post('fileUpload', 'App\Http\Controllers\FileController@fileUpload')->name('fileUpload')->middleware('is_admin');
 Route::get('manage_file', [App\Http\Controllers\FileController::class, 'manage_file'])->name('manage_file')->middleware('is_admin');
+
+// Links 
+Route::get('create_link', [App\Http\Controllers\LinkController::class, 'create_link'])->name('create_link')->middleware('is_admin');
+Route::get('manage_links', [App\Http\Controllers\LinkController::class, 'manage_links'])->name('manage_links')->middleware('is_admin');
+Route::POST('save_link', [App\Http\Controllers\LinkController::class, 'save_link'])->name('save_link')->middleware('is_admin');
+Route::get('link_delete/{id}', [App\Http\Controllers\LinkController::class, 'link_delete'])->middleware('is_admin');

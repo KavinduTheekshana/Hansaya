@@ -10,11 +10,11 @@
     <!-- Content Wrapper START -->
     <div class="main-content">
         <div class="page-header">
-            <h2 class="header-title">File Upload</h2>
+            <h2 class="header-title">Create Link</h2>
             <div class="header-sub-title">
                 <nav class="breadcrumb breadcrumb-dash">
                     <a href="#" class="breadcrumb-item"><i class="anticon anticon-home m-r-5"></i>Home</a>
-                    <span class="breadcrumb-item active">File Upload</span>
+                    <span class="breadcrumb-item active">Create Link</span>
                 </nav>
             </div>
         </div>
@@ -33,12 +33,12 @@
 
         <div class="card">
             <div class="card-body">
-                <h4>File Browser</h4>
+                <h4>Create New Link</h4>
 
                 <div class="m-t-25">
                     <div class="row">
                         <div class="col-md-7">
-                            <form action="{{route('fileUpload')}}" method="post" enctype="multipart/form-data">
+                            <form action="{{route('save_link')}}" method="post" enctype="multipart/form-data">
                                 @csrf
 
                                 @if ($message = Session::get('success'))
@@ -58,15 +58,9 @@
                                 @endif
 
 
-                                <div class="custom-file">
-                                    <input type="file" name="file" class="custom-file-input" id="chooseFile">
-                                    <label class="custom-file-label" for="customFile">Choose PDF file</label>
-                                </div>
-                                <br>
-                                <br>
 
                                 <div class="form-group">
-                                    <label for="formGroupExampleInput">Example label</label>
+                                    <label for="formGroupExampleInput">Grade</label>
                                     <div class="m-b-15">
                                         <select class="select2" name="grade">
                                             <option value="0">All</option>
@@ -80,7 +74,13 @@
                                     </div>
                                 </div>
 
-                                <button type="submit" class="btn btn-primary">Upload</button>
+
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">Add Your Link Here</label>
+                                    <textarea name="link"></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Sent Invite Link</button>
                             </form>
                         </div>
                     </div>
@@ -92,10 +92,12 @@
 
 
 
-
     </div>
     <!-- Content Wrapper END -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
 
-
+    <script>
+  new FroalaEditor('textarea');
+</script>
 
     @endsection

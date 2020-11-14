@@ -28,7 +28,7 @@ class FileController extends Controller
         $file_size= round($size, 2) . ' ' . $units[$i];
 
         $request->validate([
-            'file' => 'required|mimes:pdf,doc|max:2048',
+            'file' => 'required|mimes:pdf,doc,docx|max:2048',
             'grade' => 'required'
         ]);
 
@@ -54,8 +54,11 @@ class FileController extends Controller
 
     public function manage_file()
     {
-        return view('manage_file');
+        $pdffiles = File::where('extension', '=', 'pdf') ->orderBy('grade', 'asc')->get();
+        $wordfiles = File::where('extension', '=', 'doc')->orwhere('extension', '=', 'docx') ->orderBy('grade', 'asc')->get();
+        return view('manage_file',['pdffiles' => $pdffiles,'wordfiles' => $wordfiles]);
     }
 
+  
 
 }

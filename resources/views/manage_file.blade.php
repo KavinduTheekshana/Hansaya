@@ -8,49 +8,34 @@
 
 
     <!-- Content Wrapper START -->
-  
 
-     
-          <!-- Content Wrapper START -->
-          <div class="main-content">
-                    <div class="file-manager-wrapper">
-                        <div class="file-manager-nav">
-                            <div class="d-flex flex-column justify-content-between h-100">
-                                <div class="p-t-20">
-                                    <ul class="menu nav flex-column">
-                                        <li class="nav-item">
-                                            <a href="" class="nav-link active">
-                                                <i class="anticon anticon-folder text-primary"></i>
-                                                <span>My File</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="" class="nav-link">
-                                                <i class="anticon anticon-clock-circle text-primary"></i>
-                                                <span>Recent</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="" class="nav-link">
-                                                <i class="anticon anticon-share-alt text-primary"></i>
-                                                <span>Shared with me</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="" class="nav-link">
-                                                <i class="anticon anticon-star text-primary"></i>
-                                                <span>Favorite</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="" class="nav-link">
-                                                <i class="anticon anticon-delete text-primary"></i>
-                                                <span>Trash</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="m-b-30 m-h-25">
+
+
+    <!-- Content Wrapper START -->
+    <div class="main-content">
+        <div class="file-manager-wrapper">
+            <div class="file-manager-nav">
+                <div class="d-flex flex-column justify-content-between h-100">
+                    <div class="p-t-20">
+                        <ul class="menu nav flex-column">
+                            <li class="nav-item">
+                                <a href="#" class="btnpdffilelist nav-link active" onclick="pdffilelist();">
+                                    <i class="anticon anticon-file-pdf text-danger"></i>
+                                    <span class="text-danger">PDF</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="btnwordfilelist nav-link" onclick="wordfilelist();">
+                                    <i class="anticon anticon-file-word text-primary"></i>
+                                    <span class="text-primary">Word</span>
+                                </a>
+                            </li>
+
+
+
+                        </ul>
+                    </div>
+                    <!-- <div class="m-b-30 m-h-25">
                                     <div class="d-flex justify-content-between">
                                         <span class="text-gray">Free Space</span>
                                         <span class="text-gray">30%</span>
@@ -64,217 +49,199 @@
                                             <span class="m-l-5">Upgrade</span>
                                         </button>
                                     </div>
+                                </div> -->
+                </div>
+            </div>
+            <div class="file-manager-content">
+                <div class="file-manager-content-body">
+
+
+                    <div class="file-manager-content-files">
+                        <div class="unselect-bg"></div>
+                        <h5 class="relative">Files</h5>
+                        <!-- PDF  -->
+                        
+                        <div class="pdffilelist file-wrapper m-t-20" >
+                        @foreach($pdffiles as $pdffile)
+                        <div class="file vertical" onclick="pdffilelistitem('{{$pdffile->name}}','{{$pdffile->extension}}','{{$pdffile->file_size}}','{{$pdffile->author}}','{{$pdffile->created_at}}','{{$pdffile->file_path}}');">
+                                <div class="font-size-40">
+                                    <i class="anticon anticon-file-pdf text-danger"></i>
+                                </div>
+                                <div class="m-t-10">
+                                    <h6 class="mb-0">{{$pdffile->name}}</h6>
+                                    <span class="font-size-13 text-muted">{{$pdffile->file_size}}</span>
+                                    <br>
+                                    <span class="font-size-13 text-muted">
+                                        @if($pdffile->grade=='0')
+                                        All
+                                        @else
+                                        Grade : {{$pdffile->grade}}
+                                        @endif
+                                    </span>
                                 </div>
                             </div>
+                            @endforeach
                         </div>
-                        <div class="file-manager-content">
-                            
-                            <div class="file-manager-content-body">
-                                <div class="file-manager-content-files">
-                                    <div class="unselect-bg"></div>
-                                    <h5 class="relative">Files</h5>
-                          
-                                    <div class="file-wrapper m-t-20">
-                                        <div class="file vertical" >
-                                            <div class="font-size-40">
-                                                <i class="anticon anticon-file-pdf text-danger"></i>
-                                            </div>
-                                            <div class="m-t-10">
-                                                <h6 class="mb-0">App Flow.pdf</h6>
-                                                <span class="font-size-13 text-muted">19.8MB</span>
-                                            </div>
-                                        </div>
-                                        <div class="file vertical" >
-                                            <div class="font-size-40">
-                                                <i class="anticon anticon-file-word text-primary"></i>
-                                            </div>
-                                            <div class="m-t-10">
-                                                <h6 class="mb-0">Documentation.doc</h6>
-                                                <span class="font-size-13 text-muted">1.2MB</span>
-                                            </div>
-                                        </div>
-                                        <div class="file vertical" >
-                                            <div class="font-size-40">
-                                                <i class="anticon anticon-file-excel text-success"></i>
-                                            </div>
-                                            <div class="m-t-10">
-                                                <h6 class="mb-0">Expensess.xls</h6>
-                                                <span class="font-size-13 text-muted">518KB</span>
-                                            </div>
-                                        </div>
-                                        <div class="file vertical" >
-                                            <div class="font-size-40">
-                                                <i class="anticon anticon-file-ppt text-secondary"></i>
-                                            </div>
-                                            <div class="m-t-10">
-                                                <h6 class="mb-0">Presentation.ppt</h6>
-                                                <span class="font-size-13 text-muted">308KB</span>
-                                            </div>
-                                        </div>
-                                        <div class="file vertical" >
-                                            <div class="font-size-40">
-                                                <i class="anticon anticon-file-word text-primary"></i>
-                                            </div>
-                                            <div class="m-t-10">
-                                                <h6 class="mb-0">Guideline.doc</h6>
-                                                <span class="font-size-13 text-muted">1.2MB</span>
-                                            </div>
-                                        </div>
-                                        <div class="file vertical" >
-                                            <div class="font-size-40">
-                                                <i class="anticon anticon-file-excel text-success"></i>
-                                            </div>
-                                            <div class="m-t-10">
-                                                <h6 class="mb-0">Annual_Report.xls</h6>
-                                                <span class="font-size-13 text-muted">518KB</span>
-                                            </div>
-                                        </div>
-                                        <div class="file vertical" >
-                                            <div class="font-size-40">
-                                                <i class="anticon anticon-file-word text-primary"></i>
-                                            </div>
-                                            <div class="m-t-10">
-                                                <h6 class="mb-0">Design_brief.doc</h6>
-                                                <span class="font-size-13 text-muted">168KB</span>
-                                            </div>
-                                        </div>
-                                    </div>
+                       
+
+
+                        <!-- WORD -->
+                        
+                        <div class="wordfilelist file-wrapper m-t-20 d-none" >
+                        @foreach($wordfiles as $wordfile)
+                        <div class="file vertical" onclick="wordfilelistitem('{{$wordfile->name}}','{{$wordfile->extension}}','{{$wordfile->file_size}}','{{$wordfile->author}}','{{$wordfile->created_at}}','{{$wordfile->file_path}}');">
+                                <div class="font-size-40">
+                                    <i class="anticon anticon-file-word text-primary"></i>
                                 </div>
-                                <div class="file-manager-content-details">
-                                    <div class="content-details d-none">
-                                        <div class="p-h-25 p-v-15 d-flex justify-content-between align-items-center border-bottom">
-                                            <h5 class="m-b-0">App Flow.pdf</h5>
-                                            <div class="content-details-close">
-                                                <a class="text-dark" href="javascript:void(0);">
-                                                    <i class="anticon anticon-right-circle"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="m-b-10">
-                                            <div class="d-flex justify-content-around display-3 align-items-center content-details-file">
-                                                <i class="anticon anticon-file-pdf text-danger"></i>
-                                            </div>
-                                        </div>
-                                        <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-                                            <li class="nav-item">
-                                                <a class="nav-link active" data-toggle="tab" href="#tab-details">Details</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#tab-activity">Activity</a>
-                                            </li>
-                                        </ul>
-                                        <div class="tab-content m-t-15" id="myTabContent">
-                                            <div class="tab-pane fade show active" id="tab-details">
-                                                <div class="p-h-25 p-v-15">
-                                                    <dl class="row m-b-10">
-                                                        <dt class="col-5 text-dark">Type:</dt>
-                                                        <dd class="col-7">pdf</dd>
-                                                    </dl>   
-                                                    <dl class="row m-b-10">
-                                                        <dt class="col-5 text-dark">Size:</dt>
-                                                        <dd class="col-7">19.8MB</dd>
-                                                    </dl>   
-                                                    <dl class="row m-b-10">
-                                                        <dt class="col-5 text-dark">Modified:</dt>
-                                                        <dd class="col-7">Feb 17, 2019</dd>
-                                                    </dl>   
-                                                    <dl class="row m-b-10">
-                                                        <dt class="col-5 text-dark">Created:</dt>
-                                                        <dd class="col-7">Feb 17, 2019</dd>
-                                                    </dl> 
-                                                    <dl class="row m-b-10">
-                                                        <dt class="col-5 text-dark">Author:</dt>
-                                                        <dd class="col-7">Erin Gonzales</dd>
-                                                    </dl>    
-                                                </div>
-                                                <div class="border-top border-bottom p-h-25 p-v-10 d-flex align-items-center">
-                                                    <span class="text-dark font-weight-semibold m-r-10">Add Description</span> 
-                                                    <button class="m-r-5 btn btn-icon btn-hover btn-rounded btn-sm">
-                                                        <i class="anticon anticon-edit"></i>
-                                                    </button>
-                                                </div> 
-                                            </div>
-                                            <div class="tab-pane fade" id="tab-activity" role="tabpanel">
-                                                <div class="p-h-20 p-v-15">
-                                                    <div class="m-b-25">
-                                                        <div class="p-b-10 border-bottom">
-                                                            <div class="d-flex align-items-center">
-                                                                <div class="avatar avatar-image m-r-10">
-                                                                    <img src="assets/images/avatars/thumb-1.jpg" alt="">
-                                                                </div>
-                                                                <div class="text-gray">
-                                                                    <span class="text-dark font-weight-semibold">Erin Gonzales </span>
-                                                                    <span>added </span>
-                                                                    <span>2 files</span>
-                                                                    <div class="text-muted font-size-13">
-                                                                        7:57PM
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <ul class="list-unstyled m-l-50 m-t-15">
-                                                                <li class="m-b-15">
-                                                                    <div class="avatar avatar-icon avatar-red avatar-sm">
-                                                                        <i class="anticon anticon-file-pdf"></i>
-                                                                    </div>
-                                                                    <span class="text-gray">Guide Line.pdf</span>
-                                                                </li>
-                                                                <li class="m-b-15">
-                                                                    <div class="avatar avatar-icon avatar-blue avatar-sm">
-                                                                        <i class="anticon anticon-file-word"></i>
-                                                                    </div>
-                                                                    <span class="text-gray">Business Plan.doc</span>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="m-b-25">
-                                                        <div class="p-b-10 border-bottom">
-                                                            <div class="d-flex align-items-center">
-                                                                <div class="avatar avatar-image m-r-10">
-                                                                    <img src="assets/images/avatars/thumb-1.jpg" alt="">
-                                                                </div>
-                                                                <div class="text-gray">
-                                                                    <span class="text-dark font-weight-semibold">Erin Gonzales </span>
-                                                                    <span>added </span>
-                                                                    <span>1 files</span>
-                                                                    <div class="text-muted font-size-13">
-                                                                        7:57PM
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <ul class="list-unstyled m-l-50 m-t-15">
-                                                                <li class="m-b-15">
-                                                                    <div class="avatar avatar-icon avatar-cyan avatar-sm">
-                                                                        <i class="anticon anticon-file-excel"></i>
-                                                                    </div>
-                                                                    <span class="text-gray">Expenses.xls</span>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="content-details-no-data">
-                                        <div class="text-center">
-                                            <img class="img-fluid opacity-04" src="assets/images/others/file-manager.png" alt="">
-                                            <p class="text-muted m-t-20">Select folder or file to view details</p>
-                                        </div>
+                                <div class="m-t-10">
+                                    <h6 class="mb-0">{{$wordfile->name}}</h6>
+                                    <span class="font-size-13 text-muted">{{$wordfile->file_size}}</span>
+                                    <br>
+                                    <span class="font-size-13 text-muted">
+                                        @if($wordfile->grade=='0')
+                                        All
+                                        @else
+                                        Grade : {{$wordfile->grade}}
+                                        @endif
+                                    </span>
+                                </div>
+                            </div>
+                            @endforeach
+                        </div>
+                       
+
+
+
+                    </div>
+
+
+                    <div class="file-manager-content-details">
+
+
+
+                        <div class="content-details d-none">
+                            <div class="p-h-25 p-v-15 d-flex justify-content-between align-items-center border-bottom">
+                                <h5 class="m-b-0" id="filename">App Flow.pdf</h5>
+                                <div class="content-details-close">
+                                    <a class="text-dark" href="javascript:void(0);">
+                                        <i class="anticon anticon-right-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="m-b-10">
+                                <div class="d-flex justify-content-around display-3 align-items-center content-details-file">
+                                    <i class="pdficondetails anticon anticon-file-pdf text-danger d-none"></i>
+                                    <i class="wordicondetails anticon anticon-file-word text-primary d-none"></i>
+                                </div>
+                            </div>
+
+                            <ul class="nav nav-tabs nav-justified" id="myTab" role="">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#tab-details">Details</a>
+                                </li>
+
+                            </ul>
+                            <div class="tab-content m-t-15" id="myTabContent">
+                                <div class="tab-pane fade show active" id="tab-details">
+                                    <div class="p-h-25 p-v-15">
+                                        <dl class="row m-b-10">
+                                            <dt class="col-5 text-dark">Name:</dt>
+                                            <dd class="col-7" id="ddname">pasdasddf</dd>
+                                        </dl>
+                                        <dl class="row m-b-10">
+                                            <dt class="col-5 text-dark">Type:</dt>
+                                            <dd class="col-7" id="ddextension">pasdasddf</dd>
+                                        </dl>
+                                        <dl class="row m-b-10">
+                                            <dt class="col-5 text-dark">Size:</dt>
+                                            <dd class="col-7" id="ddsize">19.8MB</dd>
+                                        </dl>
+                                        <dl class="row m-b-10">
+                                            <dt class="col-5 text-dark">Created:</dt>
+                                            <dd class="col-7" id="ddcreated">Feb 17, 2019</dd>
+                                        </dl>
+                                        <dl class="row m-b-10">
+                                            <dt class="col-5 text-dark">Author:</dt>
+                                            <dd class="col-7" id="ddauthor">Erin Gonzales</dd>
+                                        </dl>
+                                        <br>
+                                        <a href="#" download id="trigger-loading-1" class="btn btn-success m-r-5" style="width: 100%;">
+                                            <i class="anticon anticon-cloud-download m-r-5"></i>
+                                            <span>Download</span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+
+
+
+                        <div class="content-details-no-data">
+                            <div class="text-center">
+                                <img class="img-fluid opacity-04" src="assets/images/others/file-manager.png" alt="">
+                                <p class="text-muted m-t-20">Select folder or file to view details</p>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
-
-
-
-
-
+            </div>
+        </div>
     </div>
-    <!-- Content Wrapper END -->
 
 
 
-    @endsection
+
+
+</div>
+<!-- Content Wrapper END -->
+
+
+<script type="text/javascript">
+    function pdffilelist() {
+        $('.pdffilelist').removeClass('d-none');
+        $('.wordfilelist').addClass('d-none');
+        $('.btnpdffilelist').addClass('active');
+        $('.btnwordfilelist').removeClass('active');
+    }
+
+    function wordfilelist() {
+        $('.wordfilelist').removeClass('d-none');
+        $('.pdffilelist').addClass('d-none');
+        $('.btnwordfilelist').addClass('active');
+        $('.btnpdffilelist').removeClass('active');
+    }
+
+    function pdffilelistitem(name, extension, size, author, created_at, parth) {
+        $('.pdficondetails').removeClass('d-none');
+        $('.wordicondetails').addClass('d-none');
+        $('.content-details').removeClass('d-none');
+        $('#ddextension').text(extension);
+        $('#ddname').text(name);
+        $('#ddsize').text(size);
+        $('#ddcreated').text(created_at);
+        $('#ddauthor').text(author);
+        $('#filename').text(name);
+        $("#trigger-loading-1").attr("href", parth);
+    }
+
+    function wordfilelistitem(name, extension, size, author, created_at, parth) {
+        $('.wordicondetails').removeClass('d-none');
+        $('.pdficondetails').addClass('d-none');
+        $('.content-details').removeClass('d-none');
+        $('#ddextension').text(extension);
+        $('#ddname').text(name);
+        $('#ddsize').text(size);
+        $('#ddcreated').text(created_at);
+        $('#ddauthor').text(author);
+        $('#filename').text(name);
+        $("#trigger-loading-1").attr("href", parth);
+    }
+</script>
+
+
+
+
+@endsection
