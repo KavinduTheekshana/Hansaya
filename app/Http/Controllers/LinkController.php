@@ -21,6 +21,13 @@ class LinkController extends Controller
         return view('manage_links',['links' => $links]);
     }
 
+    public function manage_links_students()
+    {
+        $authid = Auth::user()->grade;
+        $links = Link::where('grade', '=', $authid)->orderBy('id', 'desc')->get();
+        return view('manage_links_students',['links' => $links]);
+    }
+
     public function save_link(Request $request)
     {
         $request->validate([

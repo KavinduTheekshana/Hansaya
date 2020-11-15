@@ -59,6 +59,24 @@ class FileController extends Controller
         return view('manage_file',['pdffiles' => $pdffiles,'wordfiles' => $wordfiles]);
     }
 
-  
+    public function manage_file_student_pdf()
+    {
+        $pdffiles = File::where([['extension', '=', 'pdf'],['grade', '=', Auth::user()->grade]])->orwhere([['extension', '=', 'pdf'],['grade', '=', '0']])->orderBy('grade', 'asc')->get();
+       
+        return view('manage_file_student_pdf',['pdffiles' => $pdffiles]);
+    }
+
+    public function manage_file_student_word()
+    {
+       
+        $wordfiles = File::where([['extension', '=', 'doc'],['grade', '=', Auth::user()->grade]])->orwhere([['extension', '=', 'doc'],['grade', '=', '0']])->orwhere([['extension', '=', 'docx'],['grade', '=', Auth::user()->grade]])->orwhere([['extension', '=', 'docx'],['grade', '=', '0']])->orderBy('grade', 'asc')->get();
+        return view('manage_file_student_word',['wordfiles' => $wordfiles]);
+    }
+
+    public function file_delete($id)
+    {
+        DB::table('files')->where('id', $id)->delete();
+        // return redirect()->back()->with('project_diactivate_status', 'Project Delete Sucessfully');
+    }
 
 }

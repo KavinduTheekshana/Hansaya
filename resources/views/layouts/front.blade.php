@@ -244,13 +244,11 @@
 							<div class="footer-widget quick-widget">
 								<h2>Quick Links</h2>
 								<ul class="quick-list">
-									<li><a href="contact.html">Contact</a></li>
-									<li><a href="pricing.html">Pricing Packages</a></li>
-									<li><a href="about.html">About Us</a></li>
-									<li><a href="courses.html">Courses</a></li>
-									<li><a href="blog.html">News</a></li>
-									<li><a href="index.html">Home</a></li>
-									<li><a href="#">Sample Page</a></li>
+									<li><a href="contact.html">මුල් පිටුව</a></li>
+									<li><a href="pricing.html">අපගේ පඨමාලා</a></li>
+									<li><a href="about.html">අප ගැන</a></li>
+									<li><a href="courses.html">සම්බන්ද වන්න</a></li>
+
 								</ul>
 							</div>
 						</div>
@@ -274,7 +272,7 @@
 			<div class="footer-copyright copyrights-layout-default">
 				<div class="container">
 					<div class="copyright-inner">
-						<div class="copyright-cell"> &copy; 2020 <span class="highlight">CreatX Software</span>. Created by Kavindu Theekshana</div>
+						<div class="copyright-cell"> &copy; 2020 <span class="highlight">CreatX Software</span>. Created by Kavindu Theekshana. 071 542 14 23</div>
 						<div class="copyright-cell">
 							<ul class="studiare-social-links">
 								<li><a href="#" class="facebook"><i class="fa fa-facebook-f"></i></a></li>

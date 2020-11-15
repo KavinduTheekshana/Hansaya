@@ -32,10 +32,19 @@
             <!-- Header START -->
             <div class="header">
                 <div class="logo logo-dark">
+                    @if(auth()->user()->is_admin)
                     <a href="adminHome">
                         <img src="images/logo.png" height="50px" style="margin-top: 10px;" alt="Logo">
                         <img class="logo-fold" src="assets/images/logo/logo-fold.png" alt="Logo">
                     </a>
+                    @else
+                    <a href="userHome">
+                        <img src="images/logo.png" height="50px" style="margin-top: 10px;" alt="Logo">
+                        <img class="logo-fold" src="assets/images/logo/logo-fold.png" alt="Logo">
+                    </a>
+                    @endif
+
+                    
                 </div>
                 <div class="logo logo-white">
                     <a href="index.html">
@@ -146,7 +155,14 @@
                                                 {{ auth()->user()->name }}
                                                 @endif
                                             </p>
-                                            <p class="m-b-0 opacity-07">{{ auth()->user()->dob }}</p>
+                                            <p class="m-b-0 opacity-07">
+                                                @if(auth()->user()->is_admin)
+                                                Admin
+                                                @else
+                                                Student
+                                                @endif
+
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -155,24 +171,6 @@
                                         <div>
                                             <i class="anticon opacity-04 font-size-16 anticon-user"></i>
                                             <span class="m-l-10">Edit Profile</span>
-                                        </div>
-                                        <i class="anticon font-size-10 anticon-right"></i>
-                                    </div>
-                                </a>
-                                <a href="javascript:void(0);" class="dropdown-item d-block p-h-15 p-v-10">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <div>
-                                            <i class="anticon opacity-04 font-size-16 anticon-lock"></i>
-                                            <span class="m-l-10">Account Setting</span>
-                                        </div>
-                                        <i class="anticon font-size-10 anticon-right"></i>
-                                    </div>
-                                </a>
-                                <a href="javascript:void(0);" class="dropdown-item d-block p-h-15 p-v-10">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <div>
-                                            <i class="anticon opacity-04 font-size-16 anticon-project"></i>
-                                            <span class="m-l-10">Projects</span>
                                         </div>
                                         <i class="anticon font-size-10 anticon-right"></i>
                                     </div>
@@ -213,6 +211,7 @@
             <div class="side-nav">
                 <div class="side-nav-inner">
                     <ul class="side-nav-menu scrollable">
+                    @if(auth()->user()->is_admin)
                         <li class="active">
                             <a class="dropdown-toggle" href="adminHome">
                                 <span class="icon-holder">
@@ -221,7 +220,7 @@
                                 <span class="title">Dashboard</span>
                             </a>
                         </li>
-
+                 
                         <li class="active">
                             <a class="dropdown-toggle" href="users">
                                 <span class="icon-holder">
@@ -253,20 +252,64 @@
                         <li class="active">
                             <a class="dropdown-toggle" href="create_link">
                                 <span class="icon-holder">
-                                <i class="anticon anticon-audit"></i>
+                                    <i class="anticon anticon-audit"></i>
                                 </span>
                                 <span class="title">Create Link</span>
                             </a>
                         </li>
 
+
                         <li class="active">
                             <a class="dropdown-toggle" href="manage_links">
                                 <span class="icon-holder">
-                                <i class="anticon anticon-link"></i>
+                                    <i class="anticon anticon-link"></i>
                                 </span>
                                 <span class="title">Manage Links</span>
                             </a>
                         </li>
+                        @endif
+
+                        @if(!auth()->user()->is_admin)
+
+                        <li class="active">
+                            <a class="dropdown-toggle" href="userHome">
+                                <span class="icon-holder">
+                                    <i class="anticon anticon-dashboard"></i>
+                                </span>
+                                <span class="title">Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li class="active">
+                            <a class="dropdown-toggle" href="manage_file_student_pdf">
+                                <span class="icon-holder">
+                                    <i class="anticon anticon-file-pdf"></i>
+                                </span>
+                                <span class="title">PDF Files</span>
+                            </a>
+                        </li>
+
+                        <li class="active">
+                            <a class="dropdown-toggle" href="manage_file_student_word">
+                                <span class="icon-holder">
+                                    <i class="anticon anticon-file-word"></i>
+                                </span>
+                                <span class="title">Word Files</span>
+                            </a>
+                        </li>
+
+                        <li class="active">
+                            <a class="dropdown-toggle" href="manage_links_students">
+                                <span class="icon-holder">
+                                    <i class="anticon anticon-link"></i>
+                                </span>
+                                <span class="title">Your Links</span>
+                            </a>
+                        </li>
+
+                        @endif
+
+
 
                     </ul>
                 </div>
@@ -283,11 +326,8 @@
             <!-- Footer START -->
             <footer class="footer">
                 <div class="footer-content">
-                    <p class="m-b-0">Copyright © 2019 Theme_Nate. All rights reserved.</p>
-                    <span>
-                        <a href="" class="text-gray m-r-15">Term &amp; Conditions</a>
-                        <a href="" class="text-gray">Privacy &amp; Policy</a>
-                    </span>
+                    <p class="m-b-0">© 2020 CreatX Software. Created by Kavindu Theekshana. 071 542 14 23</p>
+
                 </div>
             </footer>
             <!-- Footer END -->
@@ -401,7 +441,7 @@
         <!-- Search End-->
 
         <!-- Quick View START -->
-        <div class="modal modal-right fade quick-view" id="quick-view">
+        <!-- <div class="modal modal-right fade quick-view" id="quick-view">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header justify-content-between align-items-center">
@@ -455,7 +495,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Quick View END -->
     </div>
     </div>
@@ -487,9 +527,9 @@
     <script src="assets/js/pages/datatables.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
- <!-- page js -->
-<script src="assets/vendors/quill/quill.min.js"></script>
-<!-- <script src="assets/js/pages/mail.js"></script> -->
+    <!-- page js -->
+    <script src="assets/vendors/quill/quill.min.js"></script>
+    <!-- <script src="assets/js/pages/mail.js"></script> -->
 
 
 </body>

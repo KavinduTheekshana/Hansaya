@@ -13,6 +13,17 @@
 
     <!-- Content Wrapper START -->
     <div class="main-content">
+
+    <div class="alert alert-danger d-none" id="progress_user_delete">
+                    <div class="d-flex align-items-center justify-content-start">
+                        <span class="alert-icon">
+                            <i class="anticon anticon-check-o"></i>
+                        </span>
+                        <span>File Delete Sucessfully</span>
+                    </div>
+                </div>
+
+
         <div class="file-manager-wrapper">
             <div class="file-manager-nav">
                 <div class="d-flex flex-column justify-content-between h-100">
@@ -60,10 +71,10 @@
                         <div class="unselect-bg"></div>
                         <h5 class="relative">Files</h5>
                         <!-- PDF  -->
-                        
-                        <div class="pdffilelist file-wrapper m-t-20" >
-                        @foreach($pdffiles as $pdffile)
-                        <div class="file vertical" onclick="pdffilelistitem('{{$pdffile->name}}','{{$pdffile->extension}}','{{$pdffile->file_size}}','{{$pdffile->author}}','{{$pdffile->created_at}}','{{$pdffile->file_path}}');">
+
+                        <div class="pdffilelist file-wrapper m-t-20">
+                            @foreach($pdffiles as $pdffile)
+                            <div class="file vertical" onclick="pdffilelistitem('{{$pdffile->id}}','{{$pdffile->name}}','{{$pdffile->extension}}','{{$pdffile->file_size}}','{{$pdffile->author}}','{{$pdffile->created_at}}','{{$pdffile->file_path}}');">
                                 <div class="font-size-40">
                                     <i class="anticon anticon-file-pdf text-danger"></i>
                                 </div>
@@ -82,14 +93,14 @@
                             </div>
                             @endforeach
                         </div>
-                       
+
 
 
                         <!-- WORD -->
-                        
-                        <div class="wordfilelist file-wrapper m-t-20 d-none" >
-                        @foreach($wordfiles as $wordfile)
-                        <div class="file vertical" onclick="wordfilelistitem('{{$wordfile->name}}','{{$wordfile->extension}}','{{$wordfile->file_size}}','{{$wordfile->author}}','{{$wordfile->created_at}}','{{$wordfile->file_path}}');">
+
+                        <div class="wordfilelist file-wrapper m-t-20 d-none">
+                            @foreach($wordfiles as $wordfile)
+                            <div class="file vertical" onclick="wordfilelistitem('{{$wordfile->id}}','{{$wordfile->name}}','{{$wordfile->extension}}','{{$wordfile->file_size}}','{{$wordfile->author}}','{{$wordfile->created_at}}','{{$wordfile->file_path}}');">
                                 <div class="font-size-40">
                                     <i class="anticon anticon-file-word text-primary"></i>
                                 </div>
@@ -108,7 +119,7 @@
                             </div>
                             @endforeach
                         </div>
-                       
+
 
 
 
@@ -169,6 +180,14 @@
                                             <i class="anticon anticon-cloud-download m-r-5"></i>
                                             <span>Download</span>
                                         </a>
+                                        <br>
+                                        <br>
+                                        @if(auth()->user()->is_admin)
+                                        <a href="#" onclick="" id="deletebuttonlink" download id="trigger-loading-1" class="btn btn-danger m-r-5" style="width: 100%;">
+                                        <i class="anticon anticon-delete m-r-5"></i>
+                                            <span>Delete</span>
+                                        </a>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -214,7 +233,7 @@
         $('.btnpdffilelist').removeClass('active');
     }
 
-    function pdffilelistitem(name, extension, size, author, created_at, parth) {
+    function pdffilelistitem(id,name, extension, size, author, created_at, parth) {
         $('.pdficondetails').removeClass('d-none');
         $('.wordicondetails').addClass('d-none');
         $('.content-details').removeClass('d-none');
@@ -225,9 +244,10 @@
         $('#ddauthor').text(author);
         $('#filename').text(name);
         $("#trigger-loading-1").attr("href", parth);
+        $("#deletebuttonlink").attr("onclick", "sweet("+id+")");
     }
 
-    function wordfilelistitem(name, extension, size, author, created_at, parth) {
+    function wordfilelistitem(id,name, extension, size, author, created_at, parth) {
         $('.wordicondetails').removeClass('d-none');
         $('.pdficondetails').addClass('d-none');
         $('.content-details').removeClass('d-none');
@@ -238,8 +258,66 @@
         $('#ddauthor').text(author);
         $('#filename').text(name);
         $("#trigger-loading-1").attr("href", parth);
+        $("#deletebuttonlink").attr("onclick", "sweet("+id+")");
     }
 </script>
+
+
+<script>
+        function sweet(id) {
+
+            swal({
+                    title: "Are you sure?",
+                    text: "Once deleted, you will not be able to recover this imaginary file!",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+
+                })
+                .then((willDelete) => {
+                    if (willDelete) {
+
+                        $.ajax({
+                            url: "{{ url('file_delete')}}" + '/' + id,
+                            type: "GET",
+                            success: function() {
+
+                                swal({
+                                    title: "Success!",
+                                    text: "Poof! Your imaginary file has been deleted!",
+                                    type: "success",
+                                }).then(
+                                    function() {
+                                        location.reload();
+                                        $('#progress_user_delete').removeClass("d-none");
+                                    });
+
+                                $('#progress_user_delete').removeClass("d-none");
+                            },
+                            error: function() {
+                                swal({
+                                    title: 'Opps...',
+                                    text: 'data.message',
+                                    type: 'error',
+                                    timer: '1500'
+                                })
+                            }
+
+                        })
+
+
+                        // swal("Poof! Your imaginary file has been deleted!", {
+                        //     icon: "success",
+                        // });
+                    } else {
+                        swal("Your imaginary file is safe!", {
+                            icon: "info",
+                        });
+
+                    }
+                });
+        };
+    </script>
 
 
 

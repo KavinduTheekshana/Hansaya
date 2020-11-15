@@ -728,7 +728,7 @@
 
 <!-- testimonial-section 
 			================================================== -->
-<section class="testimonial-section">
+<!-- <section class="testimonial-section">
 	<div class="container">
 		<div class="testimonial-box owl-wrapper">
 
@@ -797,7 +797,7 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 <!-- End testimonial section -->
 
 @endsection
