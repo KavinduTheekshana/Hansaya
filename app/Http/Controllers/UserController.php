@@ -37,4 +37,6 @@ class UserController extends Controller
         DB::table('users')->where('id', $id)->delete();
         // return redirect()->back()->with('project_diactivate_status', 'Project Delete Sucessfully');
     }
+
+    
 }

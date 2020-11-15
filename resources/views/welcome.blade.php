@@ -110,13 +110,13 @@
 			<section class="question-section">
 			<div class="container">
 				<div class="question-box">
-					<h3 style="margin-bottom: 0px; font-size: 30px;"><span>නොපහන් ශිල්ප  සුපහන් කරන</span></h3>
+					<h3 data-animscroll="fade-up" style="margin-bottom: 0px; font-size: 30px;"><span>නොපහන් ශිල්ප  සුපහන් කරන</span></h3>
 					<!-- <h1 style="text-align: center;"><span>නොපහන් ශිල්ප  සුපහන් කරන</span></h1> -->
-					<h1 style="text-align: center;"><span>...යුගයේ සිංහල පන්තිය....</span></h1>
+					<h1 data-animscroll="fade-up" style="text-align: center;"><span>...යුගයේ සිංහල පන්තිය....</span></h1>
 					
 					<br>
 					<div class="row">
-						<div class="col-lg-6">
+						<div class="col-lg-6" data-animscroll="fade-up">
 							<div class="block-content">
 								<div class="icon">
 									<i class="fa fa-circle"></i>
@@ -127,7 +127,7 @@
 							</div>
 						</div>
 
-						<div class="col-lg-6">
+						<div class="col-lg-6" data-animscroll="fade-up">
 							<div class="block-content">
 								<div class="icon">
 									<i class="fa fa-circle"></i>
@@ -141,7 +141,7 @@
 					</div>
 
 					<div class="row">
-						<div class="col-lg-6">
+						<div class="col-lg-6" data-animscroll="fade-up">
 							<div class="block-content">
 								<div class="icon">
 									<i class="fa fa-circle"></i>
@@ -152,7 +152,7 @@
 							</div>
 						</div>
 
-						<div class="col-lg-6">
+						<div class="col-lg-6" data-animscroll="fade-up">
 							<div class="block-content">
 								<div class="icon">
 									<i class="fa fa-circle"></i>
@@ -166,7 +166,7 @@
 					</div>
 
 					<div class="row">
-						<div class="col-lg-6">
+						<div class="col-lg-6" data-animscroll="fade-up">
 							<div class="block-content">
 								<div class="icon">
 									<i class="fa fa-circle"></i>
@@ -177,7 +177,7 @@
 							</div>
 						</div>
 
-						<div class="col-lg-6">
+						<div class="col-lg-6" data-animscroll="fade-up">
 							<div class="block-content">
 								<div class="icon">
 									<i class="fa fa-circle"></i>
@@ -191,7 +191,7 @@
 					</div>
 
 					<div class="row">
-						<div class="col-lg-6">
+						<div class="col-lg-6" data-animscroll="fade-up">
 							<div class="block-content">
 								<div class="icon">
 									<i class="fa fa-circle"></i>
@@ -202,7 +202,7 @@
 							</div>
 						</div>
 
-						<div class="col-lg-6">
+						<div class="col-lg-6" data-animscroll="fade-up">
 							<div class="block-content">
 								<div class="icon">
 									<i class="fa fa-circle"></i>
@@ -226,18 +226,21 @@
 
 <!-- countdown-section 
 			================================================== -->
-<section class="countdown-section">
+			
+<section class="countdown-section" data-animscroll="fade-up">
+
 	<div class="container">
 
-		<h1 style="font-size: 50px;">දැක්ම</h1>
+		<h1 data-animscroll="fade-up" style="font-size: 50px;">දැක්ම</h1>
 		<br>
-		<p style="font-size: 35px;">හෙට දිනන මඟ තනන සිහල පරපුරක්</p>
+		<p data-animscroll="fade-up" style="font-size: 35px;">හෙට දිනන මඟ තනන සිහල පරපුරක්</p>
 
 
-		<a class="button-two" href="#">සම්බන්ද වන්න</a>
+		<a data-animscroll="fade-up" class="button-two" href="contact">සම්බන්ද වන්න</a>
 
 	</div>
 </section>
+			
 <!-- End countdown section -->
 
 
@@ -248,8 +251,8 @@
 	<div class="container">
 		<div class="title-section">
 			<div class="left-part">
-				<span>සිංහල භාෂාව පිළිබඳ</span>
-				<h1>මෙසේ තබමු සටහනක් .....</h1>
+				<span data-animscroll="fade-right">සිංහල භාෂාව පිළිබඳ</span>
+				<h1 data-animscroll="fade-right">මෙසේ තබමු සටහනක් .....</h1>
 			</div>
 			<div class="right-part">
 				<!-- <a class="button-one" href="#">View All Courses</a> -->
@@ -257,7 +260,7 @@
 		</div>
 		<div class="collection-box">
 			<div class="row">
-				<div class="col-lg-6 col-md-12">
+				<div class="col-lg-6 col-md-12" data-animscroll="fade-right">
 				
 	
 				<div class="events-post">
@@ -282,7 +285,7 @@
 
 				</div>
 
-				<div class="col-lg-6 col-md-12">
+				<div class="col-lg-6 col-md-12" data-animscroll="fade-left">
 					<div class="collection-post">
 						<div class="inner-collection">
 							<img src="upload/collection/language.jpg" alt="">
@@ -300,17 +303,17 @@
 
 <!-- countdown-section 
 			================================================== -->
-<section class="countdown-section">
+<section class="countdown-section" data-animscroll="fade-up">
 	<div class="container">
 
 
 
-		<h1 style="font-size: 50px;">මෙහෙවර </h1>
+		<h1 data-animscroll="fade-up" style="font-size: 50px;">මෙහෙවර </h1>
 		<br>
-		<p style="font-size: 35px; line-height: 40px;">අභියෝග හමුවේ නොසැලී, පෙරට ගමන් කරන, විනය ගරුක, දැනුමෙන් පිරි, සාහිත්‍යයෙන් හෙබි, කුසලතා වලින් යුතු ශක්තිමත් පෞරුෂයක් ඇති සිසු පරපුරක් ලක් මාතාවට දායාද කිරීම .</p>
+		<p data-animscroll="fade-up" style="font-size: 35px; line-height: 40px;">අභියෝග හමුවේ නොසැලී, පෙරට ගමන් කරන, විනය ගරුක, දැනුමෙන් පිරි, සාහිත්‍යයෙන් හෙබි, කුසලතා වලින් යුතු ශක්තිමත් පෞරුෂයක් ඇති සිසු පරපුරක් ලක් මාතාවට දායාද කිරීම .</p>
 		<br>
 
-		<a class="button-two" href="#">සම්බන්ද වන්න</a>
+		<a data-animscroll="fade-up" class="button-two" href="about">අප ගැන</a>
 
 
 	</div>
@@ -329,16 +332,16 @@
 	<div class="container">
 		<div class="title-section">
 			<div class="left-part">
-				<span>සිංහල භාෂාව</span>
-				<h1>සම්පූර්ණයෙන්ම නව ආකාරයකින් අත්විඳින්න</h1>
+				<span data-animscroll="fade-right">සිංහල භාෂාව</span>
+				<h1 data-animscroll="fade-right">සම්පූර්ණයෙන්ම නව ආකාරයකින් අත්විඳින්න</h1>
 			</div>
-			<div class="right-part">
-				<a class="button-one" href="#">ඇමතුම් සහාය</a>
+			<div class="right-part" data-animscroll="fade-left">
+				<a class="button-one" href="contact">ඇමතුම් සහාය</a>
 			</div>
 		</div>
 		<div class="collection-box">
 			<div class="row">
-				<div class="col-lg-6 col-md-12">
+				<div class="col-lg-6 col-md-12" data-animscroll="fade-right"> 
 					<div class="collection-post">
 						<div class="inner-collection">
 							<img src="upload/collection/web-development.jpg" alt="">
@@ -347,10 +350,10 @@
 					</div>
 				</div>
 
-				<div class="col-lg-6 col-md-12">
+				<div class="col-lg-6 col-md-12" data-animscroll="fade-left">
 
 
-					<div class="events-post">
+					<div class="events-post" data-animscroll="fade-up">
 						<div class="event-inner-content">
 							<div class="top-part">
 								<div class="date-holder">
@@ -368,7 +371,7 @@
 
 
 
-					<div class="events-post">
+					<div class="events-post" data-animscroll="fade-up">
 						<div class="event-inner-content">
 							<div class="top-part">
 								<div class="date-holder">
@@ -385,7 +388,7 @@
 					</div>
 
 
-					<div class="events-post">
+					<div class="events-post" data-animscroll="fade-up">
 						<div class="event-inner-content">
 							<div class="top-part">
 								<div class="date-holder">
@@ -401,7 +404,7 @@
 						</div>
 					</div>
 
-					<div class="events-post">
+					<div class="events-post" data-animscroll="fade-up">
 						<div class="event-inner-content">
 							<div class="top-part">
 								<div class="date-holder">

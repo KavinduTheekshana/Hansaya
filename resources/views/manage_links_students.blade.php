@@ -91,7 +91,7 @@
 
                 </div>
                 <div>
-                    <h5 class="m-b-20">Sent Links</h5>
+                    <h5 class="m-b-20">Inbox</h5>
 
                     @foreach($links as $link)
                     <div class="mail-list" onclick="singllink('{{$link->id}}','{{$link->link}}','{{$link->grade}}','{{$link->created_at}}')">

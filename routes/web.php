@@ -15,19 +15,47 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $activehome = "active";
+    $activecourse = "";
+    $activeabout = "";
+    $activecontact = "";
+    return view('welcome', [
+        'activehome' => $activehome, 'activecourse' => $activecourse,
+        'activeabout' => $activeabout, 'activecontact' => $activecontact
+    ]);
 });
 
 Route::get('about', function () {
-    return view('about');
+    $activehome = "";
+    $activecourse = "";
+    $activeabout = "active";
+    $activecontact = "";
+    return view('about', [
+        'activehome' => $activehome, 'activecourse' => $activecourse,
+        'activeabout' => $activeabout, 'activecontact' => $activecontact
+    ]);
 });
 
 Route::get('contact', function () {
-    return view('contact');
+    $activehome = "";
+    $activecourse = "";
+    $activeabout = "";
+    $activecontact = "active";
+    return view('contact', [
+        'activehome' => $activehome, 'activecourse' => $activecourse,
+        'activeabout' => $activeabout, 'activecontact' => $activecontact
+    ]);
 });
 
 Route::get('courses', function () {
-    return view('courses');
+    $activehome = "";
+    $activecourse = "active";
+    $activeabout = "";
+    $activecontact = "";
+    return view('courses', [
+        'activehome' => $activehome, 'activecourse' => $activecourse,
+        'activeabout' => $activeabout, 'activecontact' => $activecontact
+    ]);
 });
 Auth::routes();
 
@@ -36,10 +64,10 @@ Route::get('adminHome', [App\Http\Controllers\HomeController::class, 'adminHome'
 Route::get('userHome', [App\Http\Controllers\HomeController::class, 'userHome'])->name('userHome')->middleware('is_user');
 
 
-Route::get('edit_profile', [App\Http\Controllers\ProfileController::class, 'edit_profile'])->name('edit_profile')->middleware('is_admin');
-Route::POST('changePassword', [App\Http\Controllers\ProfileController::class, 'changePassword'])->name('changePassword')->middleware('is_admin');
-Route::POST('updateProfile', [App\Http\Controllers\ProfileController::class, 'updateProfile'])->name('updateProfile')->middleware('is_admin');
-Route::POST('updateprofilepicture', [App\Http\Controllers\ProfileController::class, 'updateprofilepicture'])->name('updateprofilepicture')->middleware('is_admin');
+Route::get('edit_profile', [App\Http\Controllers\ProfileController::class, 'edit_profile'])->name('edit_profile');
+Route::POST('changePassword', [App\Http\Controllers\ProfileController::class, 'changePassword'])->name('changePassword');
+Route::POST('updateProfile', [App\Http\Controllers\ProfileController::class, 'updateProfile'])->name('updateProfile');
+Route::POST('updateprofilepicture', [App\Http\Controllers\ProfileController::class, 'updateprofilepicture'])->name('updateprofilepicture');
 
 Route::get('users', [App\Http\Controllers\UserController::class, 'users'])->name('users')->middleware('is_admin');
 Route::get('user_diactivate/{id}', [App\Http\Controllers\UserController::class, 'user_diactivate'])->middleware('is_admin');
@@ -66,3 +94,8 @@ Route::POST('save_link', [App\Http\Controllers\LinkController::class, 'save_link
 Route::get('link_delete/{id}', [App\Http\Controllers\LinkController::class, 'link_delete'])->middleware('is_admin');
 
 Route::get('manage_links_students', [App\Http\Controllers\LinkController::class, 'manage_links_students'])->name('manage_links_students')->middleware('is_user');
+
+
+
+// contact 
+Route::POST('contactform', 'App\Http\Controllers\ContactController@contactform');
