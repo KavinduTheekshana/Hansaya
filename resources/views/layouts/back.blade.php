@@ -7,7 +7,7 @@
     <title>Hansaya - Admin Dashboard</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+    <link rel="shortcut icon" href="images/logo-fold.png">
 
     <!-- page css -->
     <link href="assets/vendors/select2/select2.css" rel="stylesheet">
@@ -35,23 +35,23 @@
                     @if(auth()->user()->is_admin)
                     <a href="adminHome">
                         <img src="images/logo.png" height="50px" style="margin-top: 10px;" alt="Logo">
-                        <img class="logo-fold" src="assets/images/logo/logo-fold.png" alt="Logo">
+                        <img class="logo-fold" src="images/logo-fold.png" alt="Logo">
                     </a>
                     @else
                     <a href="userHome">
                         <img src="images/logo.png" height="50px" style="margin-top: 10px;" alt="Logo">
-                        <img class="logo-fold" src="assets/images/logo/logo-fold.png" alt="Logo">
+                        <img class="logo-fold" src="images/logo-fold.png" alt="Logo">
                     </a>
                     @endif
 
                     
                 </div>
-                <div class="logo logo-white">
+                <!-- <div class="logo logo-white">
                     <a href="index.html">
                         <img src="assets/images/logo/logo-white.png" alt="Logo">
                         <img class="logo-fold" src="assets/images/logo/logo-fold-white.png" alt="Logo">
                     </a>
-                </div>
+                </div> -->
                 <div class="nav-wrap">
                     <ul class="nav-left">
                         <li class="desktop-toggle">
@@ -267,6 +267,16 @@
                                 <span class="title">Manage Links</span>
                             </a>
                         </li>
+
+                        <li class="active">
+                            <a class="dropdown-toggle" href="contacts">
+                                <span class="icon-holder">
+                                <i class="anticon anticon-form"></i>
+                                </span>
+                                <span class="title">Contacts</span>
+                            </a>
+                        </li>
+
                         @endif
 
                         @if(!auth()->user()->is_admin)

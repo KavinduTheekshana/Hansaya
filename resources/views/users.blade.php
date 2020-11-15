@@ -26,7 +26,7 @@
                     <div class="text-md-right m-v-10">
                         <div class="btn-group">
                             <button id="list-view-btn" type="button" class="btn btn-default btn-icon">
-                            <i class="anticon anticon-appstore"></i>
+                                <i class="anticon anticon-appstore"></i>
                             </button>
                             <button id="card-view-btn" type="button" class="btn btn-default btn-icon active">
                                 <i class="anticon anticon-ordered-list"></i>
@@ -149,13 +149,13 @@
                                                 </td>
                                                 <td>
                                                     @if($user->status)
-                                                    <a href="user_diactivate/{{$user->id}}"  class="user_diactivate btn btn-icon btn-warning" style="padding: 8px;">
+                                                    <a href="user_diactivate/{{$user->id}}" class="user_diactivate btn btn-icon btn-warning" style="padding: 8px;">
                                                         <i class="anticon anticon-lock"></i>
-</a>
+                                                    </a>
                                                     @else
                                                     <a href="user_activate/{{$user->id}}" class="user_activate btn btn-icon btn-success" style="padding: 8px;">
                                                         <i class="anticon anticon-unlock"></i>
-</a>
+                                                    </a>
                                                     @endif
                                                     <button onclick="sweet('{{$user->id}}')" class="btn btn-icon btn-danger">
                                                         <i class="anticon anticon-delete"></i>

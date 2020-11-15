@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\contact;
+use App\Models\Link;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ContactController extends Controller
 {
@@ -26,5 +28,11 @@ class ContactController extends Controller
 
         $contact->save();
         // return redirect()->back()->with('status', 'New Project Added Sucessfully');
+    }
+
+    public function contacts()
+    {
+        $contatcs = Contact::orderBy('id', 'desc')->get();
+        return view('admin_contacts',['contatcs' => $contatcs]);
     }
 }

@@ -4,9 +4,12 @@
 <html lang="en" class="no-js">
 
 <head>
-	<title>Studiare</title>
+	<title>Sinhala Hansaya</title>
 
 	<meta charset="utf-8">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="images/logo-fold.png">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -137,6 +140,10 @@
 						<li>
 							<a href="contact">සම්බන්ද වන්න</a>
 						</li>
+
+						<li>
+							<a href="login">ඇතුලු වන්න</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
@@ -160,7 +167,7 @@
 						<div class="col-lg-4 col-md-6" data-animscroll="fade-up">
 							<div class="footer-widget text-widget">
 								<a href="index.html" class="footer-logo"><img src="images/logo.png" height="50px" alt=""></a>
-								<p>අපි අපගේ තේමාවට සිංහල හන්සයා යන නම තැබුවේ අපට,<br>හොඳම වෙළඳ නාම සරල ඒවාය.</p>
+								<p>අපි අපගේ තේමාවට සිංහල හන්සයා යන නම තැබුවේ.</p>
 								<ul>
 									<li>
 										<div class="contact-info-icon">
@@ -200,7 +207,9 @@
 						<div class="col-lg-4 col-md-6" data-animscroll="fade-up">
 							<div class="footer-widget subscribe-widget">
 								<h2>අපගේ සිසුන් හා එක්වන්න</h2>
-								<p>කිසිවක් අතපසු නොකරන්න, දැන්ම ලියාපදිංචි වී අපගේ කණ්ඩායම ගැන දැනුවත් වන්න.</p>
+								<p>ජීවිතයේ සොඳුරු සිත්තම් මවනා දෙහෝරාවක ආත්ම සමාධිය
+									හා
+									සතතාභ්‍යාසය වීමට දොරගුළු විවර කරමු.</p>
 								<div class="newsletter-form">
 									<input class="form-control" type="email" name="EMAIL" placeholder="ඔබේ විද්යුත් තැපැල් ලිපිනය" required="">
 									<input type="submit" value="Subscribe">
@@ -213,7 +222,7 @@
 
 			</div>
 
-			<div class="footer-copyright copyrights-layout-default" >
+			<div class="footer-copyright copyrights-layout-default">
 				<div class="container">
 					<div class="copyright-inner">
 						<div class="copyright-cell"> &copy; 2020 <span class="highlight">CreatX Software</span>. Created by Kavindu Theekshana. 071 542 14 23</div>
@@ -383,15 +392,15 @@
 		}
 	</script>
 
-<script>
-    ANIMSCROLL.init({
-        easing: 'ease-in-out-sine'
-    });
+	<script>
+		ANIMSCROLL.init({
+			easing: 'ease-in-out-sine'
+		});
 
-    $(document).ready(function(){
-        $('.rain').makeitsRain()
-    });
-</script>
+		$(document).ready(function() {
+			$('.rain').makeitsRain()
+		});
+	</script>
 
 </body>
 

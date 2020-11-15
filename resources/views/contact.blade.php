@@ -14,7 +14,9 @@
 
 
 			<h1 data-animscroll="fade-up">අප සමග සම්බන්ද වන්න</h1>
-			<p data-animscroll="fade-up">ඔබේ නිර්මාණාත්මක අදහස තේරුම් ගැනීමට යමෙකුට අපහසු ද? වඩා හොඳ දෘශ්‍යකරණයක් ඇත. ඔබගේ අදහස් අප සමඟ බෙදා ගන්න, අපි ඔබෙන් විමසීමට බලාපොරොත්තු වෙමු.</p>
+			<p data-animscroll="fade-up">ජීවිතයේ සොඳුරු සිත්තම් මවනා දෙහෝරාවක ආත්ම සමාධිය
+				හා
+				සතතාභ්‍යාසය වීමට දොරගුළු විවර කරමු.</p>
 
 
 			<div id="progress" class="alert alert-success d-none">
@@ -23,6 +25,15 @@
 						<i class="anticon anticon-check-o"></i>
 					</span>
 					<span>Your Message Send Sucessfully.</span>
+				</div>
+			</div>
+
+			<div id="progresserror" class="alert alert-danger d-none">
+				<div class="d-flex align-items-center justify-content-start">
+					<span class="alert-icon">
+						<i class="anticon anticon-close-o"></i>
+					</span>
+					<span>Your Detais Are Not Correct</span>
 				</div>
 			</div>
 
@@ -39,12 +50,12 @@
 					</div>
 				</div>
 				<div data-animscroll="fade-up">
-				<label for="tel-number">ඔබගේ දුරකථන අංකය *</label>
-				<input name="tel-number" id="tel-number" type="text">
+					<label for="tel-number">ඔබගේ දුරකථන අංකය *</label>
+					<input name="tel-number" id="tel-number" type="text">
 				</div>
 				<div data-animscroll="fade-up">
-				<label for="comment">ඔබේ පණිවිඩය *</label>
-				<textarea name="comment" id="comment"></textarea>
+					<label for="comment">ඔබේ පණිවිඩය *</label>
+					<textarea name="comment" id="comment"></textarea>
 				</div>
 				<button data-animscroll="fade-up" type="submit" id="submit" name="submit">පණිවුඩය යවන්න</button>
 				<div id="msg" class="message"></div>
@@ -71,11 +82,16 @@
 						},
 						success: function(response) {
 							$('#progress').removeClass("d-none");
+							$('#progresserror').addClass("d-none");
 							$('#name').val('');
 							$('#mail').val('');
 							$('#tel-number').val('');
 							$('#comment').val('');
 						},
+						error: function(response) {
+							$('#progresserror').removeClass("d-none");
+							$('#progress').addClass("d-none");
+						}
 					});
 				});
 			</script>

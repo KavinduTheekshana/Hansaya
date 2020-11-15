@@ -98,4 +98,5 @@ Route::get('manage_links_students', [App\Http\Controllers\LinkController::class,
 
 
 // contact 
+Route::get('contacts', [App\Http\Controllers\ContactController::class, 'contacts'])->name('contacts')->middleware('is_admin');
 Route::POST('contactform', 'App\Http\Controllers\ContactController@contactform');
