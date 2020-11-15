@@ -159,12 +159,12 @@
 		<!-- footer 
 			================================================== -->
 		<footer>
-			<div class="container" data-animscroll="fade-up">
+			<div class="container" >
 
 				<div class="up-footer">
 					<div class="row">
 
-						<div class="col-lg-4 col-md-6" data-animscroll="fade-up">
+						<div class="col-lg-4 col-md-6" >
 							<div class="footer-widget text-widget">
 								<a href="index.html" class="footer-logo"><img src="images/logo.png" height="50px" alt=""></a>
 								<p>අපි අපගේ තේමාවට සිංහල හන්සයා යන නම තැබුවේ.</p>
@@ -191,7 +191,7 @@
 							</div>
 						</div>
 
-						<div class="col-lg-4 col-md-6" data-animscroll="fade-up">
+						<div class="col-lg-4 col-md-6" >
 							<div class="footer-widget quick-widget">
 								<h2>මෙනුව</h2>
 								<ul class="quick-list">
@@ -204,7 +204,7 @@
 							</div>
 						</div>
 
-						<div class="col-lg-4 col-md-6" data-animscroll="fade-up">
+						<div class="col-lg-4 col-md-6" >
 							<div class="footer-widget subscribe-widget">
 								<h2>අපගේ සිසුන් හා එක්වන්න</h2>
 								<p>ජීවිතයේ සොඳුරු සිත්තම් මවනා දෙහෝරාවක ආත්ම සමාධිය
