@@ -7,10 +7,10 @@
 <section class="page-banner-section">
 	<div class="container">
 		<h1 data-animscroll="fade-up">එන්න....
-			ඔබ ඔබ සිංහල දැනුමෙනෙන් සන්නද්ධ කරන ශිල්පගාර වෙත...</h1>
+			ඔබ සිංහල දැනුමෙන් සන්නද්ධ කරන ශිල්පගාර වෙත...</h1>
 		<ul data-animscroll="fade-up" class="page-depth">
 			<li><a href="index.html">සිංහල හංසයා</a></li>
-			<li><a href="teachers.html">අපගේ පඨමාලා</a></li>
+			<li><a href="teachers.html">අපගේ පාඨමාලා</a></li>
 		</ul>
 	</div>
 </section>
@@ -24,7 +24,7 @@
 			<div class="col-lg-3 col-md-4" >
 				<div class="sidebar">
 					<div class="filter-widget widget">
-						<h2>අධ්යාපන ආයතන</h2>
+						<h2>අධ්‍යාපන ආයතන</h2>
 						<ul class="filter">
 							<li><a class="active" href="#" data-filter="*">සියල්ල</a></li>
 							<li><a href="#" data-filter=".walasmullathaksala">තක්සලා - වලස්මුල්ල </a></li>
@@ -177,7 +177,7 @@
 											<i class="material-icons">access_time</i> 2:30 pm - 4:30 pm
 										</span>
 										<span class="event-meta-piece location">
-											<i class="material-icons">location_on</i> තක්සලා - වලස්මුල්ල
+											<i class="material-icons">location_on</i> නිව් සුදර්ශි - මිද්දෙණිය
 										</span>
 									</div>
 									<h2 class="title"><a href="#">11 ශ්‍රේණිය : අඟහරුවාදා ප.ව 2:30 සිට 4:30 දක්වා (I කණ්ඩායම)</a></h2>
@@ -201,7 +201,7 @@
 											<i class="material-icons">access_time</i> 9:30 am - 11:30 am
 										</span>
 										<span class="event-meta-piece location">
-											<i class="material-icons">location_on</i> තක්සලා - වලස්මුල්ල
+											<i class="material-icons">location_on</i> නිව් සුදර්ශි - මිද්දෙණිය
 										</span>
 									</div>
 									<h2 class="title"><a href="#">11 ශ්‍රේණිය : සෙනසුරාදා පෙ.ව 9:30 සිට 11:30 දක්වා (II කණ්ඩායම)</a></h2>
@@ -358,10 +358,10 @@
 		<h1  style="font-size: 50px;">Online Class</h1>
 		<br>
 		<p  style="font-size: 35px; line-height: 40px;">ආයතනවලට සහභාගී විය නොහැකි දරුවන් වෙනුවෙන් online class ආරම්භ කොට ඇත.
-			වැඩි විස්තර සඳහා 0776902811 දුරකථන අංකයට පණිවිඩයක් දෙන්න.</p>
+			වැඩි විස්තර සඳහා <span style="color: #f9a134;"> 0776902811 </span> දුරකථන අංකයට පණිවිඩයක් දෙන්න.</p>
 
 
-		<a  class="button-two" href="#">සම්බන්ද වන්න</a>
+		<a  class="button-two" href="#">සම්බන්ධ වන්න</a>
 
 	</div>
 </section>

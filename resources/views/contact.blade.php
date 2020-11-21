@@ -13,7 +13,7 @@
 		<div class="contact-box">
 
 
-			<h1 data-animscroll="fade-up">අප සමග සම්බන්ද වන්න</h1>
+			<h1 data-animscroll="fade-up">අප සමග සම්බන්ධ වන්න</h1>
 			<p data-animscroll="fade-up">ජීවිතයේ සොඳුරු සිත්තම් මවනා දෙහෝරාවක ආත්ම සමාධිය
 				හා
 				සතතාභ්‍යාසය වීමට දොරගුළු විවර කරමු.</p>
@@ -45,7 +45,7 @@
 						<input name="name" id="name" type="text">
 					</div>
 					<div class="col-md-6" data-animscroll="fade-up">
-						<label for="mail">ඔබේ විද්යුත් තැපැල් ලිපිනය *</label>
+						<label for="mail">ඔබේ විද්‍යුත් තැපැල් ලිපිනය *</label>
 						<input name="mail" id="mail" type="text">
 					</div>
 				</div>

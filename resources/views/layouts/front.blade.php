@@ -110,11 +110,11 @@
 
 
 
-							<li><a class="{{$activecourse}}" href="courses">අපගේ පඨමාලා</a></li>
+							<li><a class="{{$activecourse}}" href="courses">අපගේ පාඨමාලා</a></li>
 							<!-- <li><a href="events.html">තොරතුරු</a></li>
 							<li><a href="events.html">ලිපි</a></li> -->
 							<li><a class="{{$activeabout}}" href="about">අප ගැන</a></li>
-							<li><a class="{{$activecontact}}" href="contact">සම්බන්ද වන්න</a></li>
+							<li><a class="{{$activecontact}}" href="contact">සම්බන්ධ වන්න</a></li>
 						</ul>
 						<a href="login" class="register-modal-opener login-button"><i class="material-icons">perm_identity</i> ඇතුලු වන්න</a>
 					</div>
@@ -167,13 +167,13 @@
 						<div class="col-lg-4 col-md-6" >
 							<div class="footer-widget text-widget">
 								<a href="index.html" class="footer-logo"><img src="images/logo.png" height="50px" alt=""></a>
-								<p>අපි අපගේ තේමාවට සිංහල හන්සයා යන නම තැබුවේ.</p>
+								<p>අපි අපගේ තේමාවට සිංහල හංසයා යන නම තැබුවෙමු.</p>
 								<ul>
 									<li>
 										<div class="contact-info-icon">
 											<i class="fa fa-envelope-o"></i>
 										</div>
-										<div class="contact-info-value">contact@sinhalahansaya.lk</div>
+										<div class="contact-info-value">admin@sinhalahansaya.com</div>
 									</li>
 									<li>
 										<div class="contact-info-icon">
@@ -196,9 +196,9 @@
 								<h2>මෙනුව</h2>
 								<ul class="quick-list">
 									<li><a href="/">මුල් පිටුව</a></li>
-									<li><a href="courses">අපගේ පඨමාලා</a></li>
+									<li><a href="courses">අපගේ පාඨමාලා</a></li>
 									<li><a href="about">අප ගැන</a></li>
-									<li><a href="contact">සම්බන්ද වන්න</a></li>
+									<li><a href="contact">සම්බන්ධ වන්න</a></li>
 
 								</ul>
 							</div>
@@ -206,12 +206,12 @@
 
 						<div class="col-lg-4 col-md-6" >
 							<div class="footer-widget subscribe-widget">
-								<h2>අපගේ සිසුන් හා එක්වන්න</h2>
+								<h2>අපත් සමග එකතු වන්න ඇරයුම්...</h2>
 								<p>ජීවිතයේ සොඳුරු සිත්තම් මවනා දෙහෝරාවක ආත්ම සමාධිය
 									හා
 									සතතාභ්‍යාසය වීමට දොරගුළු විවර කරමු.</p>
 								<div class="newsletter-form">
-									<input class="form-control" type="email" name="EMAIL" placeholder="ඔබේ විද්යුත් තැපැල් ලිපිනය" required="">
+									<input class="form-control" type="email" name="EMAIL" placeholder="ඔබේ විද්‍යුත් තැපැල් ලිපිනය" required="">
 									<input type="submit" value="Subscribe">
 								</div>
 							</div>
@@ -364,7 +364,7 @@
 	<script type="text/javascript" src="js/extensions/revolution.extension.parallax.min.js"></script>
 	<script src="js/studiare-plugins.min.js"></script>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<!--<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>-->
 	<script src="js/anim-trap.js"></script>
 	<script src="js/anim-scroll.js"></script>
 
